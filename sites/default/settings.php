@@ -585,8 +585,4 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  */
 # $conf['theme_debug'] = TRUE;
 
-if ($ff = '/fulcrum/fulcrum.php' AND file_exists($ff) AND (include $ff) AND isset($_FULCRUM)) {
-  fulcrum_cfg('pre', $_FULCRUM['conf']);
-} else if ($ff = "{$_SERVER['HOME']}/fulcrum/php/fulcrum.php" AND file_exists($ff) AND (include $ff) AND isset($_FULCRUM)) {
-  fulcrum_cfg('pre', $_FULCRUM['conf']);
-}
+fulcrum_config('pre');
