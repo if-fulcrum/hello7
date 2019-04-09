@@ -1,6 +1,13 @@
 # Ignore configuration files that may contain sensitive information.
-# sites/*/settings*.php
+sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+
+# Don't ignore sites/default/settings.php since we added Fulcrum Magic
+!sites/default/settings.php
+
+# Ignore pesky Mac files
+.DS_Store
